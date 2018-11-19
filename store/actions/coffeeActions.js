@@ -18,7 +18,22 @@ export const getCoffeeShops = () => dispatch => {
     .catch(err => console.error("Error while fetching coffeeshops", err));
 };
 
+
 // Set the loading state
 export const setCoffeeShopsLoading = () => ({
   type: actionTypes.COFFEESHOPS_LOADING
+});
+
+export const addItemToCart = (item) => ({
+  type: actionTypes.ADD_ITEM,
+  payload: item,
+});
+
+export const removeItemFromCart = (item) => ({
+  type: actionTypes.REMOVE_ITEM,
+  payload: item,
+});
+
+export const checkOutCart = () => ({
+  type: actionTypes.CHECKOUT,
 });
