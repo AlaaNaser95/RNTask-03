@@ -8,7 +8,7 @@ import { Container } from "native-base";
 import styles from "./styles";
 
 // Actions
-import { getCoffeeShops } from "../../store/actions/coffeeActions";
+import { getCoffeeShops } from "../../store/actions/index.js";
 
 // Navigation
 import Nav from "../Navigation";
